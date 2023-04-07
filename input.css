@@ -6,12 +6,27 @@
 /* VARIABLES */
 /* #1 SECTION: HEADER + NAV */
 
+
+/* ALLGEMEINE / IN MEHREREN SECTIONS VERWENDETE KLASSEN U. CO */
 *{
     box-sizing: border-box;
 }
 body{
     scroll-behavior: smooth;
 }
+
+
+.sectionTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
 
 
 /* FONTS */
@@ -214,65 +229,6 @@ input:checked + .slider::before{
 
 
 
-@media(max-width: 1000px){
-    .mobileNavLinksTable{
-        
-        transition: 1s ease;
-        
-    }
-
-    .mobileNavLinksTable div{
-      
-    }
-
-    .mobileNavLinksTable div li{
-        font-size: 0.8rem;
-        transition: 1s ease;
-       /*border: 2px solid purple;*/
-        width: 130px;
-       
-    }
-
-}
-
-@media(max-width: 900px){
-    .mobileNavLinksTable div li{
-       
-        width: 120px;
-
-    }
-
-}
-
-@media(max-width: 800px){
-    .mobileNavLinksTable{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        height: 200px;
-        
-       
-        
-    }
-
-    .mobileNavLinksTable div{
-    
-      height: 50px;
-       
-    }
-
-    .mobileNavLinksTable div li{
-        font-size: 0.8rem;
-        transition: 1s ease;
-        width:120px;
-        display: flex;
-        
-    }
-
-   
-
-}
 
 
 
@@ -399,21 +355,6 @@ input:focus{
 
 
 
-@media (max-width: 1000px){
-    .imgContainer{
-        height: 500px;
-    }
-}
-
-@media(max-width: 650px){
-    .imgContainer{
-        height: 300px;
-    }
-}
-
-
-
-
 
 
  /* ----------------------------------- #3 SECTION: ABOUT THE CAVALIER ----------------------------------------*/
@@ -447,16 +388,6 @@ input:focus{
 
 
 
-.sectionTitle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-     /*border: 2px solid turquoise;*/
- 
-}
 
 .aboutCavalierCardField{
     width: 100%;
@@ -515,27 +446,6 @@ input:focus{
    
 }
 
-
-@media (max-width: 1400px){
-    .imageAboutCavalier{
-        background-position: 0px -250px ;
-        transition: 2s ease;
-    }
-}
-
-@media (max-width: 1300px){
-    .imageAboutCavalier{
-        background-position: 0px -200px;
-        transition: 2s ease;
-    }
-}
-
-@media(max-width: 600px){
-    .imageAboutCavalier{
-        background-position: -150px -50px ;
-        transition: 2s ease;
-    }
-}
 .mobileCardItem{
     border-bottom: 0.5px solid var(--primaryBackground);
     margin: 30px;
@@ -557,49 +467,6 @@ input:focus{
    
 }
 
-@media (max-width: 1000px){
-
-    #theCavalier{
-        height: 210vh;
-        border: 2px solid green;
-    }
-
-  .aboutCavalierCardField{
-      display: none;
-  }
-    
-  .imageAboutCavalierContainer{
-      /*border: 2px solid turquoise;*/
-      height: 70vh;
-  }
-
-  .imageAboutCavalier{
-      background-position: 0px;
-      opacity: 0.8;
-  }
-
-  .aboutCavalierMobile{
-      /*border: 2px solid turquoise;*/
-      height: 100vh;
-  }
-
-}
-
-@media (max-width: 600px){
-
-
-    #theCavalier{
-        height: 260vh;
-    }
-    
-    .imageAboutCavalier{
-        background-position: -100px;
-        transition: 0.4s ease;
-    }
-}
-
-
-
 
 
 
@@ -612,8 +479,60 @@ input:focus{
 
 
 
+#aboutUs{
+    border: 2px solid cadetblue;
+    width: 100vw;
+}
 
 
+.gridContainer{
+    border: 2px solid red;
+    transition: 0.4s ease;
+    width: 90vw;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: "one two three four"
+                         "five six seven eight";
+                         
+}
+
+#one{
+    grid-area: one;
+}
+#two{
+    grid-area: two;
+}
+#three{
+    grid-area: three;
+}
+#four{
+    grid-area: four;
+}
+#five{
+    grid-area: five;
+}
+#six{
+    grid-area: six;
+}
+#seven{
+    grid-area: seven;
+}
+#eight{
+    grid-area: eight;
+}
+
+
+.gridItem{
+    border: 2px solid green;
+    display: flex;
+    transition: 0.4s ease;
+}
+
+
+/*
 
 #aboutUsPointsContainer{
     width: 50vw;
@@ -689,7 +608,7 @@ input:focus{
     font-family: 'Poiret One', cursive;
     margin: 10px;
 }
-
+*/
 
 
 
@@ -759,4 +678,187 @@ input:focus{
     margin-bottom: 20px;
     width: 90%;
    
+}
+
+
+
+
+
+
+@media(max-width: 1000px){
+    .mobileNavLinksTable{
+        
+        transition: 1s ease;
+        
+    }
+
+    .mobileNavLinksTable div{
+      
+    }
+
+    .mobileNavLinksTable div li{
+        font-size: 0.8rem;
+        transition: 1s ease;
+       /*border: 2px solid purple;*/
+        width: 130px;
+       
+    }
+
+    .gridContainer{
+        border: 2px solid blue;
+        width: 90vw;
+        height: 1500px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 10px;
+        grid-template-areas: "one two"
+                             "three four"
+                             "five six" 
+                             "seven eight";
+    }
+}
+
+@media(max-width: 900px){
+
+
+
+    .mobileNavLinksTable div li{
+        width: 120px;
+
+    }
+
+}
+
+@media(max-width: 800px){
+    .mobileNavLinksTable{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        height: 200px;
+        
+       
+        
+    }
+
+    .mobileNavLinksTable div{
+    
+      height: 50px;
+       
+    }
+
+    .mobileNavLinksTable div li{
+        font-size: 0.8rem;
+        transition: 1s ease;
+        width:120px;
+        display: flex;
+        
+    }
+
+   
+
+}
+
+
+
+@media (max-width: 1000px){
+    .imgContainer{
+        height: 500px;
+    }
+}
+
+@media(max-width: 650px){
+    .imgContainer{
+        height: 300px;
+    }
+}
+
+
+
+
+
+@media (max-width: 1400px){
+    .imageAboutCavalier{
+        background-position: 0px -250px ;
+        transition: 2s ease;
+    }
+}
+
+@media (max-width: 1300px){
+    .imageAboutCavalier{
+        background-position: 0px -200px;
+        transition: 2s ease;
+    }
+}
+
+@media(max-width: 600px){
+    .imageAboutCavalier{
+        background-position: -150px -50px ;
+        transition: 2s ease;
+    }
+
+    .gridContainer{
+        border: 2px solid blue;
+        width: 90vw;
+        height: 3000px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-gap: 10px;
+        grid-template-areas: "one"
+                             "two"
+                             "three"
+                             "four"
+                             "five"
+                             "six" 
+                             "seven"
+                             "eight";
+                             
+    }
+
+    .gridItem{
+        border: 2px solid purple;
+    }
+}
+
+@media (max-width: 1000px){
+
+    #theCavalier{
+        height: 210vh;
+        border: 2px solid green;
+    }
+
+  .aboutCavalierCardField{
+      display: none;
+  }
+    
+  .imageAboutCavalierContainer{
+      /*border: 2px solid turquoise;*/
+      height: 70vh;
+  }
+
+  .imageAboutCavalier{
+      background-position: 0px;
+      opacity: 0.8;
+  }
+
+  .aboutCavalierMobile{
+      /*border: 2px solid turquoise;*/
+      height: 100vh;
+  }
+
+}
+
+@media (max-width: 600px){
+
+
+    #theCavalier{
+        height: 260vh;
+    }
+
+    .imageAboutCavalier{
+        background-position: -100px;
+        transition: 0.4s ease;
+    }
 }

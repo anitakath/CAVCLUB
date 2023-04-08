@@ -683,7 +683,7 @@ p{
 a{
   width: 150px;
   text-align: center;
-  border-bottom: 0.5px solid var(--secondaryFont);
+  border-bottom: 0.5px solid var(--primaryBackground);
   cursor: pointer;
 }
 

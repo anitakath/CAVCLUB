@@ -1007,7 +1007,7 @@ input:focus{
   border: 2px solid red;
   transition: 0.4s ease;
   width: 90vw;
-  height: 800px;
+  height: 1200px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -1052,6 +1052,26 @@ input:focus{
   border: 2px solid green;
   display: flex;
   transition: 0.4s ease;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridItem span{
+  border: 2px solid blue;
+  margin: 20px 10px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+}
+
+#undrawPictures{
+  border: 2px solid green;
+}
+
+.counter{
+  border: 2px solid red;
+  font-size: 3rem;
 }
 
 /*
@@ -1192,7 +1212,7 @@ input:focus{
   .gridContainer{
     border: 2px solid blue;
     width: 90vw;
-    height: 1500px;
+    height: 3000px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -1266,7 +1286,7 @@ input:focus{
   .gridContainer{
     border: 2px solid blue;
     width: 90vw;
-    height: 3000px;
+    height: 5300px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 1fr);

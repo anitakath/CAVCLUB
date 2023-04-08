@@ -439,11 +439,51 @@ input:focus{
 .imageAboutCavalier{
     width: 100%;
     height: 100%;
-    background-image: url('pictures/doggo3.jpg');
-    background-size: cover;
-    background-position: 0px -350px ;
-    background-repeat: no-repeat;
-   
+    border: 10px solid purple;
+    overflow: hidden;
+   position: relative;
+}
+
+.imageAboutCavalier img{
+    width: 100%;
+    position: absolute;
+    top: -350px;
+}
+
+@media(max-width: 1000px){
+    .imageAboutCavalier img{
+        width: 100%;
+        position: absolute;
+        top: 1px;
+        
+    }
+}
+
+@media(max-width: 800px){
+    .imageAboutCavalier{
+        height: 80%;
+    }
+    .imageAboutCavalier img{
+        width: 100%;
+
+        position: absolute;
+        
+        
+    }
+}
+
+
+@media(max-width: 600px){
+    .imageAboutCavalier{
+        height: 60%;
+    }
+    .imageAboutCavalier img{
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        
+        
+    }
 }
 
 .mobileCardItem{

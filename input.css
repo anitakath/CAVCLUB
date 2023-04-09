@@ -108,7 +108,9 @@ a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.4s ease;
 }
+
 
 
 .toggleTitle{
@@ -262,7 +264,7 @@ input:checked + .slider::before{
     justify-content: end;
     position: relative;
     align-items: center;
-    background-color: black;
+    background-color: var(--primaryBackground);
     box-shadow: 0px 0px 5px silver;
 }
 
@@ -630,14 +632,28 @@ input:focus{
 
 
 
+#communityContainer{
+    width: 100vw;
+    justify-content: center;
+    align-items:flex-start;
+    position: relative;
+    flex-wrap: wrap;
+  
+}
+
+
 
 .userContainer{
-    width: 100%;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     top: 12vh;
+    position: relative;
+    top: 20px;
+    margin: 0 30px;
+    transition: 0.4s ease;
 }
 
 .userImg{
@@ -680,16 +696,18 @@ input:focus{
 @media (max-width: 1300px){
     .gridContainer{
         width: 100vw;
-        height: 4000px;
+        height: 3500px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
         grid-gap: 10px;
         grid-template-areas: "one two"
-                             "three four"
-                             "five six" 
+                             "four three"
+                             "six five" 
                              "seven eight";
     }
+
+   
 }
 
 
@@ -712,7 +730,11 @@ input:focus{
        
     }
 
-   
+    .userContainer{
+        margin: 20px 30px;
+    }
+
+
 }
 
 @media(max-width: 900px){
@@ -724,6 +746,9 @@ input:focus{
 
     }
 
+    .gridContainer{
+        height: 2500px;
+     }
 }
 
 @media(max-width: 800px){
@@ -805,10 +830,11 @@ input:focus{
                              "two"
                              "three"
                              "four"
-                             "five"
                              "six" 
+                             "five"
+                             "eight"
                              "seven"
-                             "eight";
+                             ;
                              
     }
 
@@ -844,6 +870,25 @@ input:focus{
 
 }
 
+
+
+@media(max-width: 900px){
+    /*.toggleContainer{
+        right: 100px;
+    }*/
+
+    #cavclubLogo{
+        position: absolute;
+        top: 15px;
+    }
+
+    #mobileNav i{
+        position: absolute;
+        top: 19px;
+    }
+}
+
+
 @media (max-width: 600px){
 
 
@@ -858,7 +903,15 @@ input:focus{
 }
 
 @media(max-width: 500px){
+    /*.toggleContainer{
+        right: 130px;
+        top: 15px;
+    }*/
+
     #theCavalier{
         height: 260vh;
     }
 }
+
+
+

@@ -825,7 +825,7 @@ input:checked + .slider::before{
   justify-content: end;
   position: relative;
   align-items: center;
-  background-color: hwb(0 53% 6%);
+  background-color: black;
   box-shadow: 0px 0px 5px silver;
 }
 

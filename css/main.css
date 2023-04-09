@@ -825,7 +825,7 @@ input:checked + .slider::before{
   justify-content: end;
   position: relative;
   align-items: center;
-  background-color: var(--primaryBackground);
+  background-color: hwb(0 53% 6%);
   box-shadow: 0px 0px 5px silver;
 }
 
@@ -971,7 +971,6 @@ input:focus{
 .imageAboutCavalier{
   width: 100%;
   height: 100%;
-  border: 10px solid purple;
   overflow: hidden;
   position: relative;
 }
@@ -1034,13 +1033,7 @@ input:focus{
 
 /* -------------------------------------------------------------- #4 SECTION: ABOUT US------------------------------------------------------------- */
 
-#aboutUs{
-  border: 2px solid cadetblue;
-  width: 100vw;
-}
-
 .gridContainer{
-  border: 2px solid red;
   transition: 0.4s ease;
   width: 100vw;
   height: 1200px;
@@ -1085,7 +1078,6 @@ input:focus{
 }
 
 .gridItem{
-  border: 2px solid green;
   display: flex;
   transition: 0.4s ease;
   flex-direction: column;
@@ -1116,7 +1108,6 @@ input:focus{
 .aboutUsImages{
   width: 90%;
   height: 90%;
-  border: 2px solid purple;
 }
 
 .counter{
@@ -1131,74 +1122,6 @@ input:focus{
   font-family: 'Poiret One', cursive;
   margin: 10px;
 }
-
-/*
-
-#aboutUsPointsContainer{
-    width: 50vw;
-    display: flex;
-    padding: 0 0 0 40px;
-}
-
-
-
-.aboutUsPoints{
-    border-bottom: 1px solid var(--primaryBackground);
-    width: 90%;
-    min-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    flex-grow: 1;
-    margin: 10px;
-    padding: 5px;
-    background-color: var(--transparentBackground);
-}
-
-#aboutUsDivContainer{
-    width: 50vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.aboutUsDiv{
-    height: 49%;
-    width: 48%;
-    margin: 2px;
-}
-
-
-.aboutUsImgs{
-    border-radius:20px;
-    box-shadow: 1px 1px 10px silver;
-}
-#aboutUsImg1{
-    background-image: url('/pictures/aboutUs.jpg');
-    background-size: cover;
-
-}
-
-.counterContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#undrawCommunity1{
-    padding: 10px;
-    width: 230px;
-    height: 230px;
-    margin: 20px 0px;
-    border-radius: 50%;
-    box-shadow: 1px 1px 10px silver;
-}
-
-
-*/
 
 /* -------------------------------------------------------------- #5 SECTION: COMMUNITY ------------------------------------------------------------ */
 
@@ -1333,7 +1256,6 @@ input:focus{
   }
 
   .gridContainer{
-    border: 2px solid blue;
     width: 100vw;
     height: 5300px;
     display: grid;
@@ -1351,14 +1273,12 @@ input:focus{
   }
 
   .gridItem{
-    border: 2px solid purple;
   }
 }
 
 @media (max-width: 1000px){
   #theCavalier{
     height: 210vh;
-    border: 2px solid green;
   }
 
   .aboutCavalierCardField{
@@ -1383,12 +1303,18 @@ input:focus{
 
 @media (max-width: 600px){
   #theCavalier{
-    height: 260vh;
+    height: 230vh;
   }
 
   .imageAboutCavalier{
     background-position: -100px;
     transition: 0.4s ease;
+  }
+}
+
+@media(max-width: 500px){
+  #theCavalier{
+    height: 260vh;
   }
 }
 
